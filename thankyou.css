@@ -44,12 +44,17 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-    #main-title {
-        max-width: 50%;
-    }
-    
     #linkdnwld {
         font-size: 15px;
+    }
+    #header-img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #linkdnwld {
+        font-size: 12px;
     }
     #header-img {
         width: 250px;
