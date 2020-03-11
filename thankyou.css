@@ -1,9 +1,12 @@
 .hero {
-    background-image: url('./assets/bg-topo.png');
+    background-image: url('./assets/bgfull-topo.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'logo logo' 'main tablet' 'main  tablet';
 }
 
 #linkdnwld {
@@ -38,27 +41,55 @@ p {
     width: 30%;
 }
 
-#main-title {
-    display: block;
+.main {
     padding: 5vh;
-    margin-left: 5vw;
-    width: 420px;
+    grid-area: main;
+    text-align: left;
+    margin-left: 35px;
+    width: 380px;
 }
 
-@media only screen and (max-width: 767px) {
+.main h1 {
+    padding-bottom: 30px;
+}
+
+.tablet {
+    grid-area: tablet;
+    text-align: center;
+    margin-top: -70px;
+}
+
+.img-ebook {
+    width: 350px;
+    height: auto;
+}
+
+@media only screen and (max-width: 650px) {
     #linkdnwld {
         font-size: 15px;
     }
+    .main {
+        margin: 0;
+        padding: 0;
+        width: 75%;
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tablet {
+        display: none;
+    }
     #header-img {
         width: 250px;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 480px) {
     #linkdnwld {
         font-size: 12px;
-    }
-    #header-img {
-        width: 250px;
     }
 }
