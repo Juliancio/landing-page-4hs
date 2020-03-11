@@ -20,10 +20,12 @@
 }
 
 h1 {
+    font-family: 'Anton', sans-serif;
     font-size: 1.2rem;
 }
 
 p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -44,11 +46,19 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-    #main-title {
-        max-width: 50%;
-    }
-    
     #linkdnwld {
         font-size: 15px;
+    }
+    #header-img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #linkdnwld {
+        font-size: 12px;
+    }
+    #header-img {
+        width: 250px;
     }
 }

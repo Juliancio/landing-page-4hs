@@ -54,6 +54,8 @@
     margin: 0 auto;
     border-radius: 5px;
     margin-top: -50px;
+    border-radius: 5px;
+    padding-top: 20px;
 }
 
 .flex-container p {
@@ -81,7 +83,6 @@
 }
 
 .main {
-    font-family: ;
     grid-area: main;
     text-align: left;
     margin: 50px;
@@ -143,7 +144,6 @@ form input {
     font-size: 20px;
     font-weight: bold;
     border-radius: 5px;
-    margin-bottom: 55px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -161,10 +161,6 @@ form input {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-    .form {
-        margin-top: 35px;
-        border-radius: 5px;
     }
     .tablet {
         display: none;
