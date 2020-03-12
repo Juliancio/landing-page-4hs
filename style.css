@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: antonio;
+    src: url('./assets/fonts/Antonio-Regular.ttf');
+}
+
 .hero {
     background-image: url('./assets/bgfull-topo.jpg');
     background-size: cover;
@@ -69,6 +74,8 @@
 .form h1 {
     font-size: 2rem;
     margin: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 25px;
 }
 
 .item {
@@ -109,10 +116,12 @@
 
 h1 {
     font-size: 1.2rem;
+    font-family: 'antonio', sans-serif;
 }
 
 p {
     font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .col-sm {
@@ -150,8 +159,14 @@ form input {
 }
 
 /* mobile */
-
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 370px) {
+    .main h1 {
+        font-size: 25px;
+        padding-bottom: 0;
+    }
+    .main p {
+        font-size: 17px;
+    }
     .flex-container {
         display: flex;
         flex-direction: column;
@@ -160,6 +175,44 @@ form input {
         margin: 0;
         padding: 0;
         width: 90%;
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tablet {
+        display: none;
+    }
+    .header-img {
+        width: 250px;
+        height: auto;
+    }
+    form input {
+        max-width: 224px;
+    }
+    .button-send {
+        width: 250px;
+    }
+    .form {
+        margin-top: -25px;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 785px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+    .main h1 {
+        padding-bottom: 0;
+        font-size: 40px;
     }
     .hero {
         display: flex;

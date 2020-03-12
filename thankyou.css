@@ -9,6 +9,11 @@
     grid-template-areas: 'logo logo' 'main tablet' 'main  tablet';
 }
 
+@font-face {
+    font-family: antonio;
+    src: url('./assets/fonts/Antonio-Regular.ttf');
+}
+
 #linkdnwld {
     text-decoration: none;
     width: 250px;
@@ -23,12 +28,12 @@
 }
 
 h1 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'antonio', sans-serif;
     font-size: 1.2rem;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-size: 1.2rem;
 }
 
