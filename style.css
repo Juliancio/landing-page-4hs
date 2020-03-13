@@ -159,13 +159,13 @@ form input {
 }
 
 /* mobile */
-@media only screen and (max-width: 370px) {
+@media only screen and (min-width: 250px) and (max-width: 300px){
     .main h1 {
-        font-size: 25px;
+        font-size: 20px;
         padding-bottom: 0;
     }
     .main p {
-        font-size: 17px;
+        font-size: 15px;
     }
     .flex-container {
         display: flex;
@@ -200,7 +200,7 @@ form input {
     }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 785px) {
+@media only screen and (min-width: 320px) and (max-width: 785px) {
     .flex-container {
         display: flex;
         flex-direction: column;
@@ -212,7 +212,10 @@ form input {
     }
     .main h1 {
         padding-bottom: 0;
-        font-size: 40px;
+        font-size: 5vh;
+    }
+    .main p {
+        font-size: 2vh;
     }
     .hero {
         display: flex;
