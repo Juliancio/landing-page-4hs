@@ -4,8 +4,13 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="description"
+        content="O que falta para o seu restaurante ser reconhecido por todos? Venha conhecer 5 dicas que poderão mudar o seu faturamento!">
+    <meta name="keywords" content="restaurante, dicas, faturamento, finanças, delivery, comida">
+    <meta name="author" content="Juliâncio Carvalho">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon-32x32.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -106,6 +111,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        window.onbeforeunload = function (e) {
+            return 'teste';
+        };
+        window.addEventListener('beforeunload', function (e) {
+            // Cancel the event
+            e.preventDefault(); // If you prevent default behavior in Mozilla Firefox prompt will always be shown
+            e.returnValue();
+        });
+    </script>
 </body>
 
 </html>
